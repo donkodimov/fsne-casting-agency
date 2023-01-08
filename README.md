@@ -258,7 +258,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X POST \
-    http://localhost:5000/movies \
+    https://fsne-casta.herokuapp.com/movies \
     -H 'Authorization: Bearer <YOUR_JWT>' \
     -H 'Content-Type: application/json' \
     -d '{
@@ -312,7 +312,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X DELETE \
-    http://localhost:5000/movies/<movie_id> \
+    https://fsne-casta.herokuapp.com/movies/<movie_id> \
     -H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
@@ -349,7 +349,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X PATCH \
-    http://localhost:5000/movies/<movie_id> \
+    https://fsne-casta.herokuapp.com/movies/<movie_id> \
     -H 'Authorization: Bearer <YOUR_JWT>' \
     -H 'Content-Type: application/json' \
     -d '{
@@ -509,7 +509,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X POST \
-    http://localhost:5000/actors \
+    https://fsne-casta.herokuapp.com/actors \
     -H 'Authorization: Bearer <YOUR_JWT>' \
     -H 'Content-Type: application/json' \
     -d '{
@@ -564,7 +564,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X DELETE \
-    http://localhost:5000/actors/<actor_id> \
+    https://fsne-casta.herokuapp.com/actors/<actor_id> \
     -H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
@@ -601,7 +601,7 @@ The API will return these error types when requests fail:
 
 ```bash
   curl -X PATCH \
-    http://localhost:5000/actors/<actor_id> \
+    https://fsne-casta.herokuapp.com/actors/<actor_id> \
     -H 'Authorization: Bearer <YOUR_JWT>' \
     -H 'Content-Type: application/json' \
     -d '{
