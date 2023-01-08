@@ -2,6 +2,8 @@
 
 This project is a web application that allows users to view and manage data for a casting agency, including actors and movies. The application has a Python API backend and a basic frontend with functionality for logging in, logging out, and calling three API endpoints.
 
+App URL: https://fsne-casta.herokuapp.com/
+
 Features:
 
 - View a list of actors and movies
