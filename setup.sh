@@ -8,6 +8,6 @@ export ALGORITHMS=['RS256']
 export FLASK_APP=app.py
 export FLASK_ENV=development
 
-export DATABASE_URL="postgresql://postgres@localhost:5432/heroku_local"
+export DATABASE_URL=ENV[‘DBURL’]
 export EXCITED="true"
 echo "setup.sh script executed successfully!"
