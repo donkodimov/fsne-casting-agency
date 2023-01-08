@@ -1,0 +1,55 @@
+<!-- index.html -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Casting Agency</title>
+    <link rel="stylesheet" type=text/css href="{{ url_for('static',
+    filename='styles.css') }}" />
+  </head>
+  <body>
+    <h1>Casting Agency App</h1>
+    <p>Please login first. Then select the api call you want to make.</p>
+    <div>
+      <fieldset>
+        <button id="login">
+          <a
+            href="https://testmacina.eu.auth0.com/authorize?audience=castagenAPI&response_type=token&client_id=AuRe6evednxudGjMIMvEFOWuyjl9jQst&redirect_uri=http://127.0.0.1:5000/"
+            >Log in</a
+          >
+        </button>
+        <button id="logout">
+          <a
+            href="https://testmacina.eu.auth0.com/v2/logout?client_id=AuRe6evednxudGjMIMvEFOWuyjl9jQst&returnTo=http://127.0.0.1:5000/"
+          >
+            Logout
+          </a>
+        </button>
+      </fieldset>
+      <fieldset>
+        <label for="endpoint"
+          >Chose API endpoint:
+          <select id="endpoint" name="endpoint">
+            <option value="0">(select one)</option>
+            <option value="/movies">GET /movies</option>
+            <option value="/actors">GET /actors</option>
+            <option value="/performances">GET /perfomances</option>
+            <option value="other">Other</option>
+          </select>
+          <button id="call-api">Call API</button>
+          <label for="output"
+            >API Response:
+            <textarea
+              id="output"
+              name="output"
+              rows="20"
+              cols="50"
+              placeholder="API Response ..."
+            ></textarea>
+          </label>
+        </label>
+      </fieldset>
+    </div>
+
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+  </body>
+</html>
