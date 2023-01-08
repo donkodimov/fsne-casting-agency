@@ -1,0 +1,123 @@
+.hidden {
+    display: none;
+}
+
+body {
+    color: #f5f6f7;
+    background-color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+  }
+
+  header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+
+  fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+  
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  div {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+  }
+
+  textarea,
+  select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+
+  #logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+  }
+
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  h3 {
+    margin-top: 60px;
+    color: #1b1b32;
+  }
+
+  nav {
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 50px;
+    margin: 0 auto;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+
+  .form {
+    align-items: center;
+    margin-top: 10px;
+
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    display: inline-block;
+  }
+  li {
+    clear: both;
+  }
+  li button {
+    border: none;
+    outline: none;
+    color: red;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .lists-wrapper, .todos-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 70px;
+  }
