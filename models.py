@@ -169,3 +169,12 @@ class Movie(db.Model):
       'title': self.title,
       'release_date': self.release_date
     }
+
+class Test(db.Model):
+    __tablename__ = 'testactors'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable = False)
+
+    def __init__(self, name):
+        self.name = name
