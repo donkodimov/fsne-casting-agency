@@ -15,7 +15,7 @@ def create_app(test_config=None):
     CORS(app, resources={r"*": {"origins": "*"}})
     os.environ['FLASK_DEBUG'] = '1'
 
-    drop_and_init_db(app)
+    #drop_and_init_db(app)
 
     @app.after_request
     def after_request(response):
