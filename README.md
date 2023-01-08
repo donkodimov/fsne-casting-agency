@@ -152,7 +152,7 @@ The API will return these error types when requests fail:
 `GET /movies`
 
 ```bash
-    curl http://127.0.0.1:5000/movies
+    curl https://fsne-casta.herokuapp.com/movies
 ```
 
 #### Success Response:
@@ -221,7 +221,7 @@ The API will return these error types when requests fail:
 `GET /movies/<movie_id>`
 
 ```bash
-    curl http://127.0.0.1:5000/movies/<movie_id>
+    curl https://fsne-casta.herokuapp.com/movies/<movie_id>
 ```
 
 #### Success Response:
@@ -401,7 +401,7 @@ The API will return these error types when requests fail:
 `GET /actors`
 
 ```bash
-    curl http://127.0.0.1:5000/actors
+    curl https://fsne-casta.herokuapp.com/actors
 ```
 
 #### Success Response:
@@ -472,7 +472,7 @@ The API will return these error types when requests fail:
 `GET /actors/<movie_id>`
 
 ```bash
-    curl http://127.0.0.1:5000/actors/<actor_id>
+    curl https://fsne-casta.herokuapp.com/actors/<actor_id>
 ```
 
 #### Success Response:
@@ -656,7 +656,7 @@ The API will return these error types when requests fail:
 `GET /performances`
 
 ```bash
-    curl http://127.0.0.1:5000/performances
+    curl https://fsne-casta.herokuapp.com/performances
 ```
 
 #### Success Response:
@@ -712,7 +712,7 @@ The API will return these error types when requests fail:
 `POST /performances`
 
 ```bash
-    curl -X POST http://127.0.0.1:5000/performances \
+    curl -X POST https://fsne-casta.herokuapp.com/performances \
         -H 'Authorization: <YOUR_JWT>' \
         -H 'Content-Type: application/json' \
         -d '{
