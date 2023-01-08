@@ -152,7 +152,8 @@ The API will return these error types when requests fail:
 `GET /movies`
 
 ```bash
-    curl https://fsne-casta.herokuapp.com/movies
+    curl https://fsne-casta.herokuapp.com/movies \
+    	-H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
 #### Success Response:
@@ -221,7 +222,8 @@ The API will return these error types when requests fail:
 `GET /movies/<movie_id>`
 
 ```bash
-    curl https://fsne-casta.herokuapp.com/movies/<movie_id>
+    curl https://fsne-casta.herokuapp.com/movies/<movie_id> \
+    	-H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
 #### Success Response:
@@ -401,7 +403,8 @@ The API will return these error types when requests fail:
 `GET /actors`
 
 ```bash
-    curl https://fsne-casta.herokuapp.com/actors
+    curl https://fsne-casta.herokuapp.com/actors \
+    	-H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
 #### Success Response:
@@ -472,7 +475,8 @@ The API will return these error types when requests fail:
 `GET /actors/<movie_id>`
 
 ```bash
-    curl https://fsne-casta.herokuapp.com/actors/<actor_id>
+    curl https://fsne-casta.herokuapp.com/actors/<actor_id> \
+    	-H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
 #### Success Response:
@@ -656,7 +660,8 @@ The API will return these error types when requests fail:
 `GET /performances`
 
 ```bash
-    curl https://fsne-casta.herokuapp.com/performances
+    curl https://fsne-casta.herokuapp.com/performances \
+    	-H 'Authorization: Bearer <YOUR_JWT>'
 ```
 
 #### Success Response:

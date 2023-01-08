@@ -8,6 +8,6 @@ export ALGORITHMS=['RS256']
 export FLASK_APP=app.py
 export FLASK_ENV=development
 
-export DATABASE_URL=ENV[‘DBURL’]
+export DATABASE_URL="postgres://user:password@hostname:5432/dbname"
 export EXCITED="true"
 echo "setup.sh script executed successfully!"
