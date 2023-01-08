@@ -108,15 +108,18 @@ flask run
 
 ## Getting Started
 
-- Backend Base URL: `http://127.0.0.1:5000/`
+- Backend Base URL: `https://fsne-casta.herokuapp.com/`
 
 ### Authentication
 
 There are 3 type of accounts based on the actions a user can perform:
 
 - Casting Assitant ( can GET requests)
+	- assistant@castagency.com / Twig3_Rectified_Ludicrous
 - Casting Director ( can GET, POST, PATCH requests)
+	- director@castagency.com / Twig3_Rectified_Ludicrous
 - Managing Director ( can GET, POST, PATCH, DELETE requests)
+	- director@castagency.com / Twig3_Rectified_Ludicrous
 
 ### Error Handling
 
