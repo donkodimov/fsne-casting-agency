@@ -7,7 +7,7 @@ import json
 
 from config import settings
 
-database_path = DATABASE_URL
+database_path = ENV[‘DBURL’] 
 if database_path.startswith("postgres://"):
   database_path = database_path.replace("postgres://", "postgresql://", 1)
 
