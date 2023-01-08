@@ -7,7 +7,7 @@ import json
 
 from config import settings
 
-database_path = DATABASE_URL
+database_path = "postgres://rmdtscbaxkixsv:3e7ec1fb9a11bea8b9e6e82a09c940a87bd0269f19961c621b363139ba144d9d@ec2-34-207-12-160.compute-1.amazonaws.com:5432/daem1ptu1m4r7h" 
 if database_path.startswith("postgres://"):
   database_path = database_path.replace("postgres://", "postgresql://", 1)
 
